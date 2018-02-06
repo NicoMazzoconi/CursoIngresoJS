@@ -39,8 +39,8 @@ function Materiales ()
 
 	ancho = parseInt(document.getElementById('Ancho').value);
  	largo = parseInt(document.getElementById('Largo').value);
- 	cemento = (ancho + largo) * 2;
-	cal = (ancho + largo) * 3;
+ 	cemento = ((ancho * largo)*2);
+	cal = ((ancho * largo))*3;
 
 	alert("Se necesitan " + cemento + " bolsas de cementa y " + cal + " bolsas de cal.");
 }
