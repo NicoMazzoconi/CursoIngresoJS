@@ -8,10 +8,11 @@ function SacarResto()
 	var dividendo;
 	var resultado;
 
-	divisor = parseInt(document.getElementById('numeroDivisor').value);
-	dividendo = parseInt(document.getElementById('numeroDividendo').value);
+	divisor = document.getElementById('numeroDivisor').value;
+	dividendo = document.getElementById('numeroDividendo').value;
+	divisor = parseInt(divisor);
+	dividendo = parseInt(dividendo);
 
 	resultado = dividendo % divisor;
-
 	alert("El resto es: " +resultado);
 }

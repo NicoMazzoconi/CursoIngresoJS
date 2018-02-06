@@ -7,10 +7,10 @@ function MostrarAumento()
 	var actual;
 	var reducido;
 
-	actual = parseInt(document.getElementById('importe').value);
+	actual = document.getElementById('importe').value;
+	actual = parseInt(actual);
 
 	reducido = actual * 0.75;
-
 	document.getElementById('resultado').value = reducido;
 
 }
