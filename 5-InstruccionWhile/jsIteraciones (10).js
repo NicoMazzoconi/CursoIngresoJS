@@ -12,6 +12,7 @@ function Mostrar()
 	var canPar = 0;
 	var promediopos;
 	var promedioneg;
+	var diferencia;
 
 	while(respuesta!="no")
 	
@@ -36,10 +37,10 @@ function Mostrar()
 			canCer++;
 		}
 
-	//	if(numero % 2 = 0)
-	//	{
-	//		canPar++;
-	//	}
+		if(numero % 2 == 0)
+		{
+			canPar++;
+		}
 		
 		respuesta = prompt("Desea ingresar mas numeros?");
 		
@@ -48,7 +49,8 @@ function Mostrar()
 
 	promediopos = positivos / canPos;
 	promedioneg = negativos / canNeg;
-	document.write("Promedio positivo= " + promediopos + " Promedio negativo= " + promedioneg + " Cantidad postiviso= " + canPos + " Cantidad negativos= " + canNeg);
+	diferencia = positivos - negativos;
+	document.write("<br>Promedio positivo= " + promediopos + "<br>Promedio negativo= " + promedioneg + "<br>Cantidad postiviso= " + canPos + "<br>Cantidad negativos= " + canNeg + "<br>Suma positivos= " + positivos + "<br>Suma negativos= " + negativos + "<br>Cantidad de ceros= " + canCer + "<br>Positivos - negativos= " + diferencia);
 
 
 
