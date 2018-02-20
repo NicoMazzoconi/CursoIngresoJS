@@ -7,7 +7,91 @@ c.	Se pedirán un número positivo y se mostrará la cantidad de números divisi
 d.	Se pedirán un número positivo y se mostrará si el número es un número primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
-function ComenzarIngreso () 
+	var numero;
+
+function NumerosPares()
 {
- 	
+	var i;
+	numero = document.getElementById('numero').value;
+
+	for(i = numero; i > -1; i--)
+	{
+		if(i % 2 ==0)
+		{
+			alert(i);
+		}
+	}
 }
+
+function NumerosImpares()
+{
+	var i;
+	numero = document.getElementById('numero').value;
+
+	for(i = numero; i > -1; i--)
+	{
+		if(i % 2 != 0)
+		{
+			alert(i);
+		}
+	}
+}
+
+function NumerosDivisibles()
+{
+	var i;
+	numero = document.getElementById('numero').value;
+
+	for(i = 1; i <= numero; i++)
+	{
+		if(numero % i == 0)
+			{
+				alert(i);
+			}
+	}
+
+}
+
+function VerificarPrimo()
+{
+	var i;
+	var a=0;
+	numero = document.getElementById('numero').value;
+
+	for(i = 1; i < (numero+1) ; i++)
+	{
+		if(numero % i == 0)
+		{
+			a++;
+		}
+	}
+
+	if (a != 2)
+	{
+		alert("No es primo");
+	}
+	else
+	{
+		alert("Es primo");
+	}
+}
+
+function NumerosPrimos()
+{
+	var i;
+	var a=0;
+	numero = document.getElementById('numero').value;
+
+	for(i = 1; i < (numero+1); i++)
+	{
+		if(numero % i ==0)
+		{
+			a++;
+		}
+		for(i = 1; i < (numero+1); i++)
+		{
+			alert(numero);
+		}
+	}
+}
+

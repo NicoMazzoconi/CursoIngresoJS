@@ -44,8 +44,8 @@ function comenzar()
 	document.getElementById('PrimerNumero').value = numero1;
 	document.getElementById('SegundoNumero').value = numero2;
 
-	tiempo = 0;
-	tiempo = setInterval(Responder(), 4000);
+	
+	setTimeout(Responder, 4000);
 
 
 }//FIN DE LA FUNCIÓN
@@ -58,6 +58,7 @@ function Responder()
 	if (verdadero == respuesta)
 	{
 		alert("Perfecto");
+		comenzar()
 	}
 	else
 	{
