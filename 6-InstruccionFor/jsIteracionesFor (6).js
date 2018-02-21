@@ -8,12 +8,12 @@ function Mostrar()
 	numero = prompt("");
 	numero = parseInt(numero);
 
-	while(i != numero)
+	for(i = 1; i < numero;)
 	{
-		if (i % 2 == 0)
+		i++
+		if(i % 2 ==0)
 		{
-			cantidadPar++;
-			alert(i);
+			document.write("<br>" + i);
 		}
 	}
 

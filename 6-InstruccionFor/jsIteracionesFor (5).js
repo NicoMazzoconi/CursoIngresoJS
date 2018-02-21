@@ -5,7 +5,7 @@ function Mostrar()
 
 	for (;i!=contraseña;)
 	{
-		contraseña = prompt("")
+		contraseña = prompt("Contraseña");
 	}
 
 
