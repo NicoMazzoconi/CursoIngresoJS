@@ -14,10 +14,12 @@ function Mostrar()
 		alumnos++;
 
 		notas = prompt("Ingrese la nota del alumno " + alumnos);
+		notas = parseInt(notas);
 
 		while(notas < 0 || notas > 10 || isNaN(notas))
 		{
 			notas = prompt("Ingrese la nota valida del alumno " + alumnos);
+			notas = parseInt(notas);
 		}
 
 		sexo = prompt("Ingrese el sexo del alumno " + alumnos + " con m ó f.");
@@ -28,7 +30,7 @@ function Mostrar()
 
 		}
 
-		notas = parseInt(notas);
+		
 
 		suma = suma + notas;
 

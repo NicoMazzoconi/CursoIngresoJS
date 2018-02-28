@@ -17,7 +17,7 @@ function Mostrar()
 		numeros = prompt("Ingrese un numero positivo");
 		numeros = parseInt(numeros);
 
-		while(numero < 0 || isNaN(numero))
+		while(numeros < 0 || isNaN(numeros))
 		{
 			numeros = prompt("Ingrese un numero valido");
 			numeros = parseInt(numeros);
@@ -27,7 +27,7 @@ function Mostrar()
 
 		suma = suma + numeros;
 
-		if(numeros % 2 == 0)
+		if(numeros % 2 == 0 && numeros != 0)
 		{
 			cantPares++;
 		}

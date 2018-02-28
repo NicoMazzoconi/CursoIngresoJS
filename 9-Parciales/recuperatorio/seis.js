@@ -12,13 +12,13 @@ function Mostrar()
 		contenedor++;
 
 		peso = prompt("Ingrese el peso del contenedor " + contenedor);
+		peso = parseInt(peso);
 
 		while(peso < 0 || isNaN(peso))
 		{
 			peso = prompt("Ingrese un peso valido para el contenedor " + contenedor);
+			peso = parseInt(peso);
 		}
-		
-		peso = parseInt(peso);
 
 		if(contenedor == 1)
 		{

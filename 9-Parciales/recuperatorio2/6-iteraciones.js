@@ -11,13 +11,15 @@ function Mostrar()
 		dias++;
 
 		importe = prompt("Ingrese los importes del dia " + dias);
+		importe = parseInt(importe);
 
 		while(importe<0 || isNaN(importe))
 		{
 			importe = prompt("Ingrese los importes validos del dia " + dias);
+			importe = parseInt(importe);
 		}
 		
-		importe = parseInt(importe);
+		
 
 		if(dias == 1)
 		{

@@ -12,13 +12,14 @@ function Mostrar()
 		personas++;
 
 		edad = prompt("Ingrese la edad de la persona " + personas);
+		edad = parseInt(edad);
 
 		while(edad < 0 || edad > 100 || isNaN(edad))
 		{
 			edad = prompt("Ingrese la edad validad de la persona " +personas);
+			edad = parseInt(edad);
 		}
 
-		edad = parseInt(edad);
 
 		sexo = prompt("Ingrese el sexo con f ó m, de la persona " + personas);
 

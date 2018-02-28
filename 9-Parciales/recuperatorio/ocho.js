@@ -14,13 +14,14 @@ function Mostrar()
 		contador++;
 
 		numero = prompt("Ingrese un numero");
+		numero = parseInt(numero);
 
 		while(numero < 0 || isNaN(numero))
 		{
 			numero = prompt("Ingrese un numero valido");
+			numero = parseInt(numero);
 		}
 		
-		numero = parseInt(numero);
 
 		respuesta = prompt("Quiere seguir agregando numeros?");
 
